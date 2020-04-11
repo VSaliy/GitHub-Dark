@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        GitHub Dark Custom
 @namespace   StylishThemes  Custom
-@version     2.0.41
+@version     2.0.42
 @homepageURL https://github.com/StylishThemes/GitHub-Dark
 @updateURL   https://stylishthemes.github.io/GitHub-Dark/github-dark.user.css
 @license     CC-BY-SA-4.0
@@ -216,6 +216,17 @@
 /*! Github Dark v2.0.40 (2020-04-11) */
 /*! Repository: https://github.com/StylishThemes/GitHub-Dark    */
 /*! License:    https://creativecommons.org/licenses/by-sa/4.0/ */
+@-moz-document regexp("^https?://((education|gist|graphql|guides|help|lab|raw|resources|status|developer|support)\\.)?github\\.com/((?!generated_pages/preview).)*$"), domain("githubusercontent.com"), domain("www.githubstatus.com") {
+  .octotree-sidebar.octotree-github-sidebar .octotree-views .octotree-tree-view .jstree-default .jstree-anchor, .octotree-sidebar.octotree-github-sidebar .octotree-views .octotree-tree-view .jstree-default .jstree-icon, .octotree-sidebar.octotree-github-sidebar .octotree-views .octotree-tree-view .jstree-default .jstree-icon:empty {
+    font-style: normal;
+    line-height: 24px !important;
+  }
+
+  .octotree-views .octotree-treeview .jstree-anchor .jstree-icon.tree::before, .octotree-github-sidebar a.octotree-toggle:hover, .octotree-github-sidebar a.octotree-opts:hover .settings::before, .octotree-github-sidebar a.octotree-opts.selected:hover .settings::before, .octotree-sidebar.octotree-github-sidebar .octotree-views .octotree-tree-view .jstree .jstree-anchor, .octotree-github-sidebar a.octotree-toggle:not(.octotree-loading):hover, .octotree-sidebar.octotree-github-sidebar .octotree-views .octotree-view, .octotree-sidebar.octotree-github-sidebar .octotree-toggle > span, .octotree-sidebar.octotree-github-sidebar .octotree-toggle > .octotree-toggle-icon::before {
+    color: rgb(190, 190, 190) !important;
+    color: #6a6767;
+  }
+}
 @-moz-document regexp("^https?://((education|gist|graphql|guides|help|lab|raw|resources|status|developer|support)\\.)?github\\.com/((?!generated_pages/preview).)*$"), domain("githubusercontent.com"), domain("www.githubstatus.com") {
   :root {
     --bg-custom: /*[[bg-custom]]*/;
